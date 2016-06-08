@@ -34,6 +34,7 @@ app.get('/', function( req, res ) {
 });
 app.post('/', function( req, res ) {
   messages.unshift({
+  
     message: req.body.message,
     time: new Date()
   });
